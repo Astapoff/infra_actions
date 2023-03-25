@@ -38,16 +38,3 @@ jobs:
         cd infra_project/
         # запустить написанные разработчиком тесты
         python manage.py test
-
-on: [flake8]
-ignore =
-    W503,
-    F811
-exclude =
-    tests/,
-    */migrations/,
-    venv/,
-    env/
-per-file-ignores =
-    */settings.py:E501
-max-complexity = 10
