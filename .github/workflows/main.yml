@@ -39,7 +39,7 @@ jobs:
         # запустить написанные разработчиком тесты
         python manage.py test
 
-[flake8]
+on: [flake8]
 ignore =
     W503,
     F811
