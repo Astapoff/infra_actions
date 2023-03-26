@@ -62,7 +62,6 @@ jobs:
           with:
             push: true
             tags: artastapov/infra_actions:latest
-
   deploy:
     runs-on: ubuntu-latest
     needs: build_and_push_to_docker_hub
